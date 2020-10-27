@@ -1,19 +1,18 @@
 * {
     margin: 0px;
     padding: 0px;
-  }
+}
 
-.page{
+.page {
     font-family: 'Lato', sans-serif;
 }
 
-.header{
-    background-color: crimson;
+.header {
+    background-color: #ED4C5C;
     width: 100%;
-    height: 500px;
 }
 
-.header .header-text{
+.header .header-text {
     width: 40%;
     display: inline-block;
     padding-top: 100px;
@@ -21,9 +20,7 @@
     padding-right: 30px;
 }
 
-.header .header-text .h-text{
-    width: max-content;
-    height: max-content;
+.header .header-text .h-text {
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -33,38 +30,37 @@
     display: block;
 }
 
-.header .header-text .h-sub-text{
+.header .header-text .h-sub-text {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 140%;
     color: #FFFFFF;
-    height: max-content;
     display: block;
 }
 
-.header .header-image{
+.header .header-image {
     display: inline-block;
     position: relative;
- 
 }
-.header .header-image .header-img{
+
+.header .header-image .header-img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.header-icons{
+.header-icons {
     padding-top: 30px;
     padding-left: 150px;
 }
 
-.contact-wrapper{
+.contact-wrapper {
     width: 100%;
     display: flex;
 }
 
-.contact-wrapper .contact{
+.contact-wrapper .contact {
     width: 35%;
     height: 500px;
     display: inline-block;
@@ -72,7 +68,8 @@
     padding-left: 150px;
     padding-right: 30px;
 }
-.contact-wrapper .contact .contact-text{
+
+.contact-wrapper .contact .contact-text {
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -84,7 +81,7 @@
     padding-bottom: 50px;
 }
 
-.contact-wrapper .contact .contact-sub-text{
+.contact-wrapper .contact .contact-sub-text {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -94,28 +91,37 @@
     height: max-content;
 }
 
-.contact-wrapper .contact-input{
+.contact-wrapper .contact-input {
     padding-top: 100px;
     width: 50%;
     height: 500px;
     display: inline-block;
 }
 
-.contact-wrapper .contact-input .name-input .first-name{
+.contact-wrapper .contact-input .name-input .first-name {
     width: 255px;
     height: 60px;
     border: 1px solid #333333;
     border-radius: 6px;
-    margin-right: 25px;  
+    margin-right: 25px;
 }
-.contact-wrapper .contact-input .name-input .last-name{
+
+.contact-wrapper .contact-input .name-input .first-name::placeholder {
+    padding-left: 30px;
+}
+
+.contact-wrapper .contact-input .name-input .last-name {
     border: 1px solid #333333;
     border-radius: 6px;
     width: 255px;
     height: 60px;
 }
 
-.contact-wrapper .phone-number{
+.contact-wrapper .contact-input .name-input .last-name::placeholder {
+    padding-left: 30px;
+}
+
+.contact-wrapper .phone-number {
     border: 1px solid #333333;
     border-radius: 6px;
     width: 540px;
@@ -123,7 +129,11 @@
     margin-top: 25px;
 }
 
-.contact-wrapper .service-select{
+.contact-wrapper .phone-number::placeholder {
+    padding-left: 30px;
+}
+
+.contact-wrapper .service-select {
     color: rgba(19, 39, 67, 0.5);
     border: 1px solid #333333;
     border-radius: 6px;
@@ -132,17 +142,17 @@
     height: 60px;
 }
 
-.contact-wrapper .contact-input .submit-button{
+.contact-wrapper .contact-input .submit-button {
     width: 160px;
     height: 50px;
     border-radius: 6px;
     background-color: #ED4C5C;
-    border: 1,5px solid #ED4C5C;
+    border: none;
     outline: none;
     margin-top: 25px;
 }
 
-.contact-wrapper .contact-input .submit-button .submit-text{
+.contact-wrapper .contact-input .submit-button .submit-text {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -151,21 +161,20 @@
     color: #FFFFFF;
 }
 
-.info-wrapper{
-    width: 100%;
-    height: 435px;
+.info-wrapper {
     padding-top: 100px;
     padding-left: 150px;
     text-align: left;
     display: flex;
 }
-.info-wrapper .address{
+
+.info-wrapper .address {
     width: 12%;
     display: inline-block;
     margin-right: 110px;
 }
 
-.info-wrapper .info-title{
+.info-wrapper .info-title {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -174,7 +183,8 @@
     display: block;
     padding-bottom: 25px;
 }
-.info-wrapper .address .address-text{
+
+.info-wrapper .address .address-text {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -182,7 +192,8 @@
     color: #101010;
     display: block;
 }
-.info-wrapper .address .copyright-text{
+
+.info-wrapper .address .copyright-text {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -191,13 +202,14 @@
     display: block;
     margin-top: 125px;
 }
-.info-wrapper .services{
+
+.info-wrapper .services {
     width: 5%;
     display: inline-block;
     margin-right: 160px;
 }
 
-.info-wrapper .services .services-text{
+.info-wrapper .services .services-text {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -206,12 +218,13 @@
     display: block;
 }
 
-.info-wrapper .get-in-touch{
+.info-wrapper .get-in-touch {
     width: 8%;
     display: inline-block;
     margin-right: 150px;
 }
-.info-wrapper .get-in-touch .get-in-touch-text{
+
+.info-wrapper .get-in-touch .get-in-touch-text {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -219,21 +232,12 @@
     color: #101010;
     display: block;
 }
-.info-wrapper .get-in-touch .f-icon{
 
-}
-.info-wrapper .get-in-touch .in-icon{
-
-}
-.info-wrapper .get-in-touch .t-icon{
-
-}
-
-.info-wrapper .support{
+.info-wrapper .support {
     width: 24%;
     display: inline-block;
 }
 
-.info-wrapper .support .pay-icon{
+.info-wrapper .support .pay-icon {
     display: block;
 }
